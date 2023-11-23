@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2023-10-27T14:06:15.371Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="Mu2iDcY2Uebr6a7Rg_3D" version="22.0.8" type="device">
+  <diagram name="Trang-1" id="nfT6IVjT8rWIB3eukgxh">
+    <mxGraphModel dx="1290" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-1" value="&lt;b&gt;Cập nhật Đối Tác&lt;/b&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#666666;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="120" y="50" width="550" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-2" value="Họ và tên" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;align=right;spacingRight=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="140" y="112" width="50" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-3" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;fillColor=#3399FF;rSize=0;fontColor=#666666;align=left;spacingLeft=3;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="210" y="112" width="350" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-4" value="Chức danh" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;align=right;spacingRight=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="150" y="147" width="50" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-5" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;fillColor=#ffffff;rSize=0;fontColor=#666666;align=left;spacingLeft=3;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="210" y="147" width="350" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-6" value="Email" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;align=right;spacingRight=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="150" y="182" width="50" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-7" value="abc123@gmail.com" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;fillColor=#ffffff;rSize=0;fontColor=#666666;align=left;spacingLeft=3;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="210" y="182" width="350" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-8" value="Số điện thoại" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;align=right;spacingRight=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="150" y="220" width="50" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-9" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;fillColor=#ffffff;rSize=0;fontColor=#666666;align=left;spacingLeft=3;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="210" y="220" width="350" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-10" value="Địa chỉ" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;align=right;spacingRight=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="150" y="260" width="50" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-11" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;fillColor=#ffffff;rSize=0;fontColor=#666666;align=left;spacingLeft=3;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="210" y="260" width="350" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-13" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Cập nhật&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3399FF;" vertex="1" parent="1">
+          <mxGeometry x="430" y="350" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IGyFU7n8kNzYN4gq59f6-27" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Thêm&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="350" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
