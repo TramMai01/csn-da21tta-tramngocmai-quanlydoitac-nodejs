@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+header {
+  background-color: #0ea585;
+  color: white;
+  padding: 1px;
+  text-align: center;
+}
+
+#partnerTypeSelection {
+  margin-top: 10px;
+  text-align: center;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px
+}
+
+form {
+  max-width: 400px; /* Đặt chiều rộng tối đa cho form */
+  margin: 20px auto; /* Canh giữa form trong trang */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #009dff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+/* Hide organizationForm by default */
+#organizationForm {
+  display: none;
+}

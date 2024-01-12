@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/view.css">
+  <title>Thông tin đối tác</title>
+  <style>
+ 
+  </style>
+</head>
+<body>
+  <div class="container"> 
+  <% if (partner) { %>
+  
+    <header> <h1>Thông tin đối tác</h1></header>
+    <ul>
+      
+    
+      <% if (partner.partnerType === 'organization') { %>
+        <li><strong>Tên đơn vị:</strong> <%= partner.organizationData.organizationName %></li>
+        <li><strong>Người đại diện:</strong> <%= partner.organizationData.representative %></li>
+        <li><strong>Chức danh (Đơn vị):</strong> <%= partner.organizationData.title %></li>
+        <li><strong>Địa chỉ(đơn vị):</strong> <%= partner.organizationData.address %></li>
+        <li><strong>Email(đơn vị):</strong> <%= partner.organizationData.email %></li>
+        <li><strong>Số điện thoại(đơn vị):</strong> <%= partner.organizationData.phone %></li>
+        <li><strong>Ngày hoạt động:</strong> <%= partner.organizationData.startDate %></li>
+        <li><strong>Hoạt động chi tiết:</strong> <%= partner.organizationData.activity %></li>
+      <% } else { %>
+        <li><strong>Họ tên:</strong> <%= partner.individualData.fullName %></li>
+        <li><strong>Chức danh:</strong> <%= partner.individualData.title %></li>
+        <li><strong>Địa chỉ:</strong> <%= partner.individualData.address %></li>
+        <li><strong>Email:</strong> <%= partner.individualData.email %></li>
+        <li><strong>Số điện thoại:</strong> <%= partner.individualData.phone %></li>
+        <li><strong>Ngày hoạt động:</strong> <%= partner.individualData.startDate %></li>
+        <li><strong>Hoạt động chi tiết:</strong> <%= partner.individualData.activity %></li>
+      <% } %>
+    </ul>
+    <div class="buttons-container"></div>
+
+    <a href="/partners/manage" class="back-link">Quay lại</a>
+    <button id="deleteBtn" class="delete-btn" data-partner-id="<%= partnerId %>">Xóa đối tác</button>
+    <a href="/partners/edit/<%= partner._id %>" class="edit-link">Chỉnh sửa đối tác</a>
+  </div>
+    <script src="/src/view.js"></script>
+
+  <% } else { %>
+    <p>Không có thông tin đối tác.</p>
+  <% } %>
+  </div>
+</body>
+</html>

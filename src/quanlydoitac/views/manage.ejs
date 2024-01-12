@@ -1,0 +1,91 @@
+
+<head>
+  <link rel="stylesheet" href="/css/manage.css">
+  <title>Quản lý đối tác</title>
+</head>
+<body>
+  <header>
+    <h1>Quản lý đối tác</h1>
+  </header>
+  <div id="partnerTypeSelection">
+    <label for="partnerType">Chọn loại đối tác:</label>
+    <select id="partnerType" name="partnerType"> <!-- Add name attribute -->
+      <option value="individual">Cá nhân</option>
+      <option value="organization">Đơn vị</option>
+    </select>
+  </div>
+
+  <form id="individualForm" action="/api/partners" method="post" onsubmit="submitForm('/partners/manage')">
+    <label for="fullName">Họ tên:</label>
+    <input type="text" name="fullName" required>
+
+    <label for="title">Chức danh:</label>
+    <input type="text" name="title">
+
+    <label for="address">Địa chỉ:</label>
+    <input type="text" name="address">
+
+    <label for="email">Email:</label>
+    <input type="email" name="email">
+
+    <label for="phone">Số điện thoại:</label>
+    <input type="tel" name="phone">
+
+    <label for="startDate">Ngày hoạt động:</label>
+    <input type="date" name="startDate">
+
+    <label for="activity">Hoạt động chi tiết:</label>
+    <textarea name="activity" rows="4"></textarea>
+
+    <input type="hidden" name="partnerType" value="individual">
+    <button type="submit">Thêm đối tác cá nhân</button>
+  </form>
+
+  <!-- Organization Form -->
+
+  <form id="organizationForm" action="/api/partners" method="post" onsubmit="submitForm('/partners/manage')">
+    <label for="organizationName">Tên đơn vị:</label>
+    <input type="text" name="organizationName" required>
+
+    <label for="representative">Tên Người đại diện:</label>
+    <input type="text" name="representative"> <!-- Added name attribute -->
+
+    <label for="orgTitle">Chức danh (Đơn vị):</label>
+    <input type="text" name="title">
+
+    <label for="orgAddress">Địa chỉ:</label>
+    <input type="text" name="address">
+
+    <label for="orgEmail">Email (Đơn vị):</label>
+    <input type="email" name="email">
+
+    <label for="orgPhone">Số điện thoại (Đơn vị):</label>
+    <input type="tel" name="phone">
+
+    <label for="orgStartDate">Ngày hoạt động:</label>
+    <input type="date" name="startDate">
+
+    <label for="orgActivity">Hoạt động chi tiết:</label>
+    <textarea name="activity" rows="4"></textarea>
+
+    <input type="hidden" name="partnerType" value="organization">
+    <button type="submit">Thêm đối tác đơn vị</button>
+  </form>
+
+  <ul>
+    <% partners.forEach(function(partner) { %>
+      <li>
+        <% if (partner.partnerType === 'organization') { %>
+          <%= partner.organizationData.organizationName %> - <%= partner.organizationData.representative %> -
+        <% } else { %>
+          <%= partner.individualData.fullName %> -
+        <% } %>
+        <a href="/partners/view/<%= partner._id %>">
+          Xem
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+  <script src="/src/manage.js"></script>
+</body>
+</html>

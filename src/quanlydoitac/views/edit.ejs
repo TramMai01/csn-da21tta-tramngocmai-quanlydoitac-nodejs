@@ -1,0 +1,71 @@
+
+<head>
+
+  <title>Chỉnh sửa thông tin đối tác</title>
+  <link rel="stylesheet" href="/css/edit.css">
+
+</head>
+<body>
+  <h1>Chỉnh sửa thông tin đối tác</h1>
+
+  <% if (partner) { %>
+    <!-- Biểu mẫu chỉnh sửa thông tin đối tác -->
+    <form action="/api/partners/<%= partner._id %>?redirect=/partners/manage" method="POST">
+      <label for="partnerType">Loại đối tác:</label>
+      <input type="hidden" name="partnerType" value="<%= partner.partnerType %>">
+      <% if (partner.partnerType === 'individual') { %>
+        <!-- Biểu mẫu chỉnh sửa thông tin đối tác cá nhân -->
+        <label for="fullName">Họ tên:</label>
+        <input type="text" id="fullName" name="fullName" value="<%= partner.individualData.fullName %>" required>
+
+        <label for="title">Chức danh:</label>
+        <input type="text" id="title" name="title" value="<%= partner.individualData.title %>" required>
+        
+        <label for="address">Địa chỉ:</label>
+        <input type="text" name="address"value="<%= partner.individualData.address %>">
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%= partner.individualData.email %>" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" name="phone" value="<%= partner.individualData.phone %>" required>
+
+        <label for="startDate">Ngày hoạt động:</label>
+        <input type="date" id="startDate" name="startDate" value="<%= partner.individualData.startDate %>" required>
+
+        <label for="activity">Hoạt động chi tiết:</label>
+        <textarea id="activity" name="activity" required><%= partner.individualData.activity %></textarea>
+      <% } else if (partner.partnerType === 'organization') { %>
+        <!-- Biểu mẫu chỉnh sửa thông tin đối tác đơn vị -->
+<label for="organizationName">Tên đơn vị:</label>
+<input type="text" id="organizationName" name="organizationName" value="<%= partner.organizationData.organizationName %>" required>
+
+<label for="representative">Người đại diện:</label>
+<input type="text" id="representative" name="representative" value="<%= partner.organizationData.representative %>" required>
+
+<label for="title">Chức danh (Đơn vị):</label>
+<input type="text" id="title" name="title" value="<%= partner.organizationData.title %>">
+
+<label for="address">Địa chỉ(Đơn vị):</label>
+<input type="text" id="address" name="address" value="<%= partner.organizationData.address %>">
+
+<label for="email">Email (Đơn vị):</label>
+<input type="email" id="email" name="email" value="<%= partner.organizationData.email %>">
+
+<label for="phone">Số điện thoại (Đơn vị):</label>
+<input type="text" id="phone" name="phone" value="<%= partner.organizationData.phone %>">
+
+<label for="startDate">Ngày hoạt động:</label>
+<input type="date" id="startDate" name="startDate" value="<%= partner.organizationData.startDate %>">
+
+<label for="activity">Hoạt động chi tiết:</label>
+<textarea id="activity" name="activity"><%= partner.organizationData.activity %></textarea>
+
+      <% } %>
+      <button type="submit">Cập nhật</button>
+    </form>
+  <% } else { %>
+    <p>Không có thông tin đối tác.</p>
+  <% } %>
+</body>
+</html>
